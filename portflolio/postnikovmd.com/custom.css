@@ -1,0 +1,157 @@
+:root {
+    --color-light: #FCFBFD;
+    --color-light-gray: #F7F7FA;
+    --color-gray: #F3F2F7;
+    --color-dark-gray: #CAC9CF;
+    --color-dark: #1F2024;
+    --color-btn-accent: #1F2024;
+    --color-btn-accent-hover: #000000;
+    --color-btn-light: #F7F7FA;
+    --color-btn-light-hover: #F3F2F7;
+    --blur: blur(4px)
+}
+
+@media (max-width: 479px) {
+    :root {
+        --transition: .3s;
+        --transition-func: cubic-bezier(0.5, 0.25, 0, 1);
+    }
+}
+
+@media (min-width: 480px) {
+    :root {
+        --transition: .2s;
+        --transition-func: ease-in-out;
+    }
+}
+
+::selection {
+    background-color: #CAC9CF;
+    color: #000000;
+}
+
+.visible {
+    opacity: 1 !important
+}
+
+.invisible {
+    opacity: 0 !important
+}
+
+.transition {
+    transition: var(--transition) var(--transition-func) !important
+}
+
+.transition-long {
+    transition: calc(var(--transition) * 2) var(--transition-func) !important
+}
+
+.pointer {
+    pointer-events: auto;
+    cursor: pointer
+}
+
+.notallowed {
+    pointer-events: auto;
+    cursor: not-allowed
+}
+
+.nopointer {
+    pointer-events: none
+}
+
+.lighten {
+    mix-blend-mode: lighten !important
+}
+
+.screen {
+    mix-blend-mode: screen !important
+}
+
+.overflow-disabled,
+.t-body_popupshowed {
+    overflow: hidden !important;
+}
+
+.overflow-enabled {
+    overflow: scroll !important
+}
+
+.overflow-auto {
+    overflow: auto !important
+}
+
+.t-body {
+    overflow-x: hidden !important
+}
+
+.t-input::placeholder {
+    color: #656468 !important;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+    .t-container {
+        max-width: 1200px !important;
+    }
+    .t-col {
+        display: inline !important;
+        float: left !important;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .t-col_1 {
+        max-width: 60px !important
+    }
+    .t-col_2 {
+        max-width: 160px !important
+    }
+    .t-col_3 {
+        max-width: 260px !important
+    }
+    .t-col_4 {
+        max-width: 360px !important
+    }
+    .t-col_5 {
+        max-width: 460px !important
+    }
+    .t-col_6 {
+        max-width: 560px !important
+    }
+    .t-col_7 {
+        max-width: 660px !important
+    }
+    .t-col_8 {
+        max-width: 760px !important
+    }
+    .t-col_9 {
+        max-width: 860px !important
+    }
+    .t-col_10 {
+        max-width: 960px !important
+    }
+    .t-col_11 {
+        max-width: 1060px !important
+    }
+    .t-col_12 {
+        max-width: 1160px !important
+    }
+}
+
+.t-select__wrapper:after {
+    width: 20px !important;
+    height: 20px !important;
+    background: url(https://static.tildacdn.com/tild3033-6566-4064-b062-333039343465/dropdown-arrow.svg) !important;
+    border: 0 !important;
+}
+
+.t-select.default {
+    color: rgba(0, 0, 0, .3) !important;
+}
+
+@media (max-width: 479px) {
+    .t654__cell-container {
+        padding: 12px 40px !important;
+    }
+}
